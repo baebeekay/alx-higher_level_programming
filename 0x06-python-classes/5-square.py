@@ -5,7 +5,7 @@
 class Square:
     """
     Class that defines the area a square
-    If the size is not an integer raises a Type Error
+    Iif the size is not an integer raises a Type Error
     If the size is less than zero raises a Value error
     Args:
         Size (int): Private, Size of the square
