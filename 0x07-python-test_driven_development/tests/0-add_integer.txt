@@ -68,3 +68,15 @@ test for a boolean passed:
     >>> add_integer(False)
     Traceback (most recent call last):
     TypeError: a must be an integer
+
+test for float infinity:
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+test for NaN passed:
+    >>> add_integer(float('NaN'))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
