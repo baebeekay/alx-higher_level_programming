@@ -1,0 +1,70 @@
+The ``0-add_integer`` module
+=============================
+The 0-add_integer module
+======================
+
+Adds two integers
+-------------------
+
+Import module:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Operators:
+‘a’ and ‘b’ must be integers or float:
+
+test for two positive integer:
+    >>> add_integer(1, 2)
+    3
+
+test for a is positive and b is negative:
+    >>> add_integer(100, -2)
+    98
+
+test for one parameter passed:
+    >>> add_integer(2)
+    100
+
+test for value a is float and b is negative:
+x    >>> add_integer(100.3, -2)
+    98
+
+test for value a is a negative and b is a positive:
+    >>> add_integer(-50, 10)
+    -40
+
+test for negative values:
+    >>> add_integer(-3, -8)
+    -11
+
+test for a positive and b zero:
+    >>> add_integer(15, 0)
+    15
+
+test for two zeros:
+    >>> add_integer(0, 0)
+    0
+
+test for None passed:
+    >>> add_integer(None, 100)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+test for function without parameters:
+    >>> add_integer()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+test for two floats:
+    >>> add_integer(10.5, 10.5)
+    20
+
+test for a one boolean and an integer:
+    >>> add_integer(False, 2)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+test for a boolean passed:
+    >>> add_integer(False)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
