@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-2-matrix_divided.py, - Divides the given matrix by the parameter "div", and returns the divided matrix
+2-matrix_divided.py, - Divides the given matrix by the
+parameter "div", and returns the divided matrix
 """
 
 
@@ -25,7 +26,7 @@ def matrix_divided(matrix, div):
         inner_list = []
         for items in lists:
             if not isinstance(items, (int, float)):
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError(TypeM)
             else:
                 inner_list.append(round(items / div, 2))
         new_matrix.append(inner_list)
