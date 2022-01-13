@@ -28,7 +28,7 @@ Test for no special character:
      Hello World
 
 Test for integer passed:
-     >>> text_indentation(112)
+     >>> text_indentation(912)
      Traceback (most recent call last):
      ...
      TypeError: text must be a string
