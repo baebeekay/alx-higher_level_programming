@@ -39,3 +39,7 @@ Test for string passed:
 Test for zero passed:
      	  >>> print_square(0)
 
+Test for no argument passed:
+     >>> print_square()
+     Traceback (most recent call last):
+     TypeError: print_square() missing 1 required positional argument: 'size'
