@@ -26,6 +26,7 @@ Test for integer passed as last name:
      	  Traceback (most recent call last):
     	  ...
      	  TypeError: last_name must be a string
+
 Test for zero argument passed:
     >>> say_my_name()
     Traceback (most recent call last):
