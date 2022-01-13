@@ -19,13 +19,13 @@ Test for special charcters:
      <BLANKLINE>
      School?
      <BLANKLINE>
-     Howareyou:
+     How are you:
      <BLANKLINE>
      John
 
 Test for no special character:
      >>> text_indentation("Hello World")
-     HelloWorld
+     Hello World
 
 Test for integer passed:
      >>> text_indentation(112)

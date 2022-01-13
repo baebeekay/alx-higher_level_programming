@@ -12,11 +12,24 @@ def text_indentation(text):
     if type(text) != str:
         raise TypeError("text must be a string")
     else:
-        char = ":"
-        for i in text:
-            if i == " " and char in ".?:":
-                continue
-            print(i, end="")
-            if i in ".:?":
-                print("\n")
-                char = i
+        char = ['.', '?', ':']
+
+        # Removes space after special chars
+        s = 0
+        for items in text:
+            if items in char:
+                if text[s + 1] == " ":
+                    text = text[:s + 1] + text[s + 2:]
+            else:
+                s += 1
+
+        # Cats '\n\n' after the special char with removed space
+        s = 0
+        for items in text:
+            if items in char:
+                text = text[:s + 1] + '\n\n' + text[s + 1:]
+                s += 3
+            else:
+                s += 1
+
+        print(text, end='')
