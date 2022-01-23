@@ -82,3 +82,9 @@ Test for too many argument passed:
     Traceback (most recent call last):
     ...
     TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+Test for None passed:
+    >>> bg. integer_validator(“age”, None)
+    Traceback (most recent call last):
+    ...
+    SyntaxError: invalid character in identifier
