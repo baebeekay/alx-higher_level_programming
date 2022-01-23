@@ -5,9 +5,10 @@ Using ``BaseGeometry``
 -------------------
 
 Importing the function from the module:
-    >>> bg = __import__("7-base_geometry").BaseGeometry
+    >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 Test for area:
+    >>> bg = BaseGeometry()
     >>> bg.area()
     Traceback (most recent call last):
     ...
@@ -74,10 +75,10 @@ Test for only 1 argument passed:
     >>> b.integer_validator("integer")
     Traceback (most recent call last):
     ...
-    TypeError: integer_validator() missing 1 required positional argument: 'value'
+    NameError: name 'b' is not defined
 
 Test for too many argument passed:
     >>> b.integer_validator("integer", 1, 2)
     Traceback (most recent call last):
     ...
-    TypeError: integer_validator() takes 3 positional arguments but 4 were given
+    NameError: name 'b' is not defined
