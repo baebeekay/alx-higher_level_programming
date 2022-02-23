@@ -17,7 +17,7 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
+    def to_json(self, attrs=None):
         """
          retrieves a dictionary representation of a Student instance.
 
@@ -25,6 +25,7 @@ class Student:
          only attribute names contained in this list must be retrieved.
          Otherwise, all attributes must be retrieved
         """
+        new = {}
         if type(attrs) is list:
             for key, value in self.__dict__.items():
                 if key in attrs:
